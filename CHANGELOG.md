@@ -1,3 +1,21 @@
+## ELF Aligned, support Android memory page size 16KB (2025-11-03)
+* min sdk 21
+* arm64-v8a, armeabi-v7a 指令集 使用elf对齐的so库：
+```text
+libc++_shared.so
+```
+来源：
+rn 0.77.3 (ndk 27.1.12297006)
+
+
+```text
+libmodft2.so
+libmodpdfium.so
+libmodpng.so
+```
+来源：
+https://github.com/meganz/PdfiumAndroid
+  
 ## 1.9.0 (2018-06-29)
 * Updated Pdfium library to 7.1.2_r36
 * Changed `gnustl_static` to `c++_shared`
